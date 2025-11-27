@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>{{ studentId ? 'Edit Student' : 'Add Student' }}</h2>
+  <form [formGroup]="studentForm" (ngSubmit)="submit()">
+    <div>
+      <label>First Name</label>
+      <input formControlName="firstName" />
+    </div>
+    <div>
+      <label>Last Name</label>
+      <input formControlName="lastName" />
+    </div>
+    <div>
+      <label>Email</label>
+      <input formControlName="email" />
+    </div>
+    <div>
+      <label>Age</label>
+      <input type="number" formControlName="age" />
+    </div>
+    <button type="submit">{{ studentId ? 'Update' : 'Add' }}</button>
+  </form>
+</div>

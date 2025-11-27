@@ -1,0 +1,52 @@
+/* Form container */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit button */
+button.submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #1976d2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+button.submit:hover {
+  background-color: #1565c0;
+}
+
+/* Error messages */
+.error {
+  color: #f44336;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
